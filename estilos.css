@@ -1,0 +1,158 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #007acc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navbar */
+nav {
+    background-color: #0056b3;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Pestañas */
+.card-img-top {
+    width: auto;
+    height: 200px; /* Ajusta esta altura según lo que necesites */
+    object-fit: contain; /* Ajusta la imagen sin recortarla */
+}
+
+.nav-tabs {
+    border-bottom: 2px solid #0056b3;
+}
+
+.nav-tabs .nav-link {
+    background-color: #f0f4f8;
+    color: #0056b3;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #0056b3;
+    color: white;
+    border-color: #0056b3 #0056b3 #f0f4f8;
+}
+
+.tab-content {
+    background-color: white;
+    border: 1px solid #0056b3;
+    padding: 20px;
+    text-align: center
+}
+
+/* Sección principal */
+h2 {
+    color: #0056b3;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+p, .education-item, .experience-item, .training-item {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Botones */
+button.nav-link {
+    border-radius: 0;
+    transition: background-color 0.3s;
+}
+
+button.nav-link:hover {
+    background-color: #0069d9;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer img {
+    margin: 10px;
+    width: 50px;
+    transition: transform 0.3s;
+}
+
+footer img:hover {
+    transform: scale(1.2);
+}
+
+/* Contenedor del currículum */
+.container {
+    background-color: #e6f0ff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.section-title {
+    color: #004080;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.date {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.personal-info, .education, .experience, .training {
+    margin-bottom: 20px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .nav-tabs .nav-link {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p, .education-item, .experience-item, .training-item {
+        font-size: 14px;
+    }
+
+    footer img {
+        width: 40px;
+    }
+}
