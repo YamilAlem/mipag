@@ -1,171 +1,148 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Personal</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="estilos.css">
-</head>
-<body>
-<header><img src="HEADER.png" alt=""></header>
-<div class="container mt-5">
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#sobre-mi">Sobre Mi</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#proyectos">Proyectos</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#curriculum">Curriculum</a>
-        </li>
-    </ul>
+body {
+    background-color: #f0f8ff;
+    font-family: 'Arial', sans-serif;
+}
 
-    <div class="tab-content">
-        <div id="sobre-mi" class="tab-pane fade show active">
-            <p>¡Hola! Soy Yamil, tengo 34 años y nací en La Rioja, Argentina.
-                Mi pasión por la Kinesiología es algo que disfruto profundamente, al igual que practicar deportes y viajar.
-                Tengo la suerte de contar con una hermosa familia, formada por mis padres, Salim y Gloria, y mis dos hermanos, Zair y Eliana. Además, soy tío de Amira que siempre me llena de alegría..</p>
-            <div id="carouselExample" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="1carrousel.jpeg" class="d-block" alt="Foto 1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="2carrousel.jpeg" class="d-block" alt="Foto 2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="3carrousel.jpeg" class="d-block" alt="Foto 3">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="4carrousel.jpeg" class="d-block" alt="Foto 4">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Anterior</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Siguiente</span>
-                </a>
-            </div>
-        </div>
+/* Header */
+header {
+    background-color: #007acc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
-        <div id="proyectos" class="tab-pane fade">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card">
-                        <img src="1proyecto.png" class="card-img-top" alt="Proyecto 1">
-                        <div class="card-body">
-                            <h4 class="card-title">Ministerio de Salud Publica- Direccion General de APS</h4>
-                            <p class="card-text">Formo parte del equipo de atencion primaria de la salud, realizando tareas para el proyecto denominado acuerdo de gestion dentro del plan provincial de salud.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <img src="2proyecto.png" class="card-img-top" alt="Proyecto 2">
-                        <div class="card-body">
-                            <h4 class="card-title">Colegio de Kinesiologos y Fisioterapeutas</h4>
-                            <p class="card-text">Desempeño funciones como vicepresidente de la institucion cuyo objetivo es regular el ejercicio profesional y organizar formaciones para los colegas.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <img src="3proyecto.jpeg" class="card-img-top" alt="Proyecto 3">
-                        <div class="card-body">
-                            <h4 class="card-title">Consultorio privado</h4>
-                            <p class="card-text">Realizo atencion de pacientes en consultorio privado. El mismo se encuentra en la zona sur de la ciudad capital de La Rioja.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <img src="4proyecto.jpg" class="card-img-top" alt="Proyecto 4">
-                        <div class="card-body">
-                            <h4 class="card-title">Fundación Barcelo</h4>
-                            <p class="card-text">Me encuentro cursando el ultimo año de la Tecnicatura de analisis de sistemas de informacion medica.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+header img {
+    width: 100%; /* Hace que la imagen ocupe el 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
 
-        <div id="curriculum" class="tab-pane fade">
-     
-                    <div class="curriculum">
-                        <h4>Datos Personales</h4>
-                        <p><strong>Nombre:</strong> Alem, Salim Yamil</p>
-                        <p><strong>Título:</strong> Lic. En Kinesiología y Fisiatría</p>
-                        <p><strong>M.P:</strong> 408</p>
-                        <p><strong>Edad:</strong> 34 Años</p>
-                        <p><strong>Dirección:</strong> Osman Páez N° 4, B° Mis Montañas, 5300/La Rioja- Capital</p>
-                        <p><strong>Email:</strong> yamilalem@gmail.com</p>
-                        <p><strong>Teléfono:</strong> 0380-154694647</p>
-                
-                        <h4>Formación Académica</h4>
-                        <ul>
-                            <li>2008: Título Bachiller en Economía y gestión de las organizaciones - Colegio Parroquial PIO XII</li>
-                            <li>2016: Lic. en Kinesiología y Fisiatría - Facultad de Medicina Héctor A. Barceló</li>
-                            <li>2021: Posgrado en Osteopatía - Esitef (Escuela Internacional de Terapia Física)</li>
-                        </ul>
-                
-                        <h4>Experiencia Laboral</h4>
-                        <ul>
-                            <li>2014-2019: Gimnasio Planeta Sport</li>
-                            <li>2020-Actualidad: Ministerio de Salud Pública</li>
-                            <li>2021-Actualidad: Vicepresidente Colegio de Kinesiólogos de La Rioja</li>
-                        </ul>
-                
-                        <h4>Formación Complementaria</h4>
-                        <ul>
-                            <li>2011: Congreso Nacional de Kinesiología realizado en la ciudad de La Rioja. En calidad de asistente.</li>
-                            <li>2015: Curso Teórico-Práctico de RCP (Reanimación Cardiopulmonar).</li>
-                            <li>2016: Curso anual de rehabilitación neurológica.</li>
-                            <li>2017: Certificación MEP Beauty</li>
-                            <li>2017: Recursos y estrategias para el abordaje de personas con secuelas neurológicas. Clínica Rita Bianchi.</li>
-                            <li>2017: Curso “Lesionados Medulares”. Centro Neuroability.</li>
-                            <li>2017: Curso enfermedades genéticas hereditarias poco frecuentes.</li>
-                            <li>2019: Curso aplicación de Taping Neuro Facial.</li>
-                            <li>2019: Cumbre global de discapacidad. Asistente.</li>
-                            <li>2019: Simposio Latinoamericano de posicionamiento de Sentado y Movilidad. Asistente.</li>
-                            <li>2021: Taller de ventosas. Asistente</li>
-                            <li>2021: Programa continuo de capacitación en abordaje respiratorio y terapia intensiva. Coordinador</li>
-                            <li>2023: Formación anual de rehabilitación Neurológica “Castillo Morales”. Asistente</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+.tab-content {
+    padding: 20px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+/*estilo de la pestaña sobre mi */
+#sobre-mi {
+    text-align: center; /* Asegura que el texto esté centrado */
+    margin: 20px 0; /* Espacio superior e inferior */
+}
 
-<footer class="footer mt-5">
-    <section id="contact"></section>
-    <p>&copy; 2024 Salim Yamil Alem. Todos los derechos reservados.</p>
-    <div class="social-icons">
-        <a href="https://x.com/YamilAlem?t=Y6vGyep42qmX9Wkl7-4CsA&s=08" target="_blank">
-            <img src="xtwitter-logo.png" alt="Logo Personal" class="social-icon">
-        </a>
-        <a href="https://www.facebook.com/share/RPEs7HyK2ybKo5ag/?mibextid=qi2Omg" target="_blank">
-            <img src="facebook-logo.png" alt="Logo Personal" class="social-icon">
-        </a>
-        <a href="https://www.instagram.com/yamil.alem?igsh=MWd2OGpmMWNlMjU1eQ==" target="_blank">
-            <img src="instagram-logo2.png" alt="Logo Personal" class="social-icon">
-        </a>
-        <a href="https://wa.me/380154694647"target="_blank">
-            <img src="whatsapp-logo2.png" alt="Logo Personal" class="social-icon">
-        </a>
-        <a href="mailto:yamilalem@gmail.com?subject=Consulta&body=Hola,%20me%20gustaría%20saber%20más%20sobre%20tus%20servicios."target="_blank">
-            <img src="gmail-logo.png" alt="Logo Personal" class="social-icon">
-        </a>
+#sobre-mi p {
+    margin-top: 20px; /* Espacio adicional entre el título y el texto */
+}
+
+.carousel {
+    margin: 0 auto; /* Asegura que el carrusel esté centrado */
+}
+
+#carouselExample {
+    max-width: 400px; /* Establece un ancho máximo para el carrusel */
+    margin: 0 auto; /* Centra el carrusel en el contenedor */
+}
+.carousel-item img {
+    max-width: 500px; /* Ocupa todo el ancho del contenedor */
+    max-height: 500px; /* Establece una altura máxima */
+    width: auto;
+    height: auto;
+    object-fit: cover; /* Cubre el área sin distorsionar la imagen */
+}
+
+/*estilo de la pestaña proyectos*/ 
+
+.card-img-top {
+    width: auto;
+    height: 200px; /* Ajusta esta altura según lo que necesites */
+    object-fit: contain; /* Ajusta la imagen sin recortarla */
+}
+
+.card-body {
+    text-align: center; /* Centra el texto dentro de las tarjetas */
+} 
+/*estilo curriculum*/
+
+.curriculum {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif; /* Fuente más legible */
+    line-height: 1.4; /* Menor espaciado entre líneas */
+}
+
+.curriculum h4 {
+    margin-top: 15px;
+    color: #007bff; /* Color para los encabezados */
+}
+
+.curriculum p, .curriculum ul {
+    margin: 5px 0; /* Espacio reducido entre párrafos y listas */
+}
+
+.curriculum ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding-left: 0; /* Elimina el margen izquierdo */
+}
+
+.curriculum ul li {
+    padding: 3px 0; /* Espacio reducido entre los elementos de la lista */
+    position: relative; /* Para el estilo del punto */
+}
+
+.curriculum ul li::before {
+    content: "•"; /* Punto antes del texto */
+    color: #007bff; /* Color del punto */
+    position: absolute; /* Posición absoluta para el punto */
+    left: -15px; /* Ajusta la posición del punto */
+    font-size: 1.2em; /* Tamaño del punto */
+}
+.nav-tabs .nav-link {
+    color: #007bff;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #e7f1ff;
+    color: #0056b3;
+}
+
+/* Asegúrate de que las tarjetas se ajusten bien en pantallas pequeñas */
+.card {
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        max-height: 200px; /* Reduce la altura del carrusel en pantallas pequeñas */
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 10px 0; /* Espaciado entre el texto y los íconos */
+}
+
+.social-icons {
+    display: flex; /* Usar flexbox para alinear los íconos */
+    justify-content: center; /* Centrar los íconos horizontalmente */
+}
+
+.social-icon {
+    margin: 10px;
+    width: 50px; /* Ancho de los íconos */
+    transition: transform 0.3s; /* Transición suave para el hover */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Aumentar tamaño al pasar el ratón */
+}
     </div>
 </footer>
 </body>
